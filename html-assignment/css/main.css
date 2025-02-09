@@ -1,11 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f6f3f3;
     color: #2c3e50;
 }
 
+header footer {
+background-color: #86b3e0;
+font-size: medium;
+padding: 6cqmax;
+}
+
 .site-title {
-    color: #2c3e50;
+    color: #86b3e0;
     box-shadow: 2px 1px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
 }
@@ -16,7 +22,7 @@ ul.hobby-list {
 }
 
 ul.hobby-list li:nth-child(odd) {
-    background-color: #f0f0f0;
+    background-color: #d140b1;
 }
 
 nav ul {
@@ -34,8 +40,8 @@ nav a {
     text-decoration: none;
     padding: 10px 20px;
     background-color: #3498db;
-    color: white;
-    border: 2px solid #2980b9;
+    color: rgb(223, 152, 113);
+    border: 2px solid #3c6e8f;
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
