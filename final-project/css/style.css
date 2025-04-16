@@ -1,4 +1,4 @@
-/* RESET + VARIABLES */
+/* GLOBAL RESETS */
 :root {
   --primary-color: #c78c06;
   --secondary-color: #ffe6ac;
@@ -39,7 +39,7 @@ ul {
   padding: 0 var(--section-padding);
 }
 
-/* HEADER */
+/* HEADER SECTION */
 header {
   background-color: var(--text-color);
   color: var(--reversal-color);
@@ -51,16 +51,6 @@ header .container {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.nav-group {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.logo-container {
-  width: 80px;
 }
 
 .logo {
@@ -90,7 +80,6 @@ header .container {
   margin-top: 0;
   align-items: center;
   gap: 5px;
-  margin-top: 0;
 }
 
 .search-form input {
@@ -106,7 +95,7 @@ header .container {
   cursor: pointer;
 }
 
-/* WELCOME */
+/* WELCOME SECTION */
 .sign-section {
   background-image: url('../images/main-banner.jpg');
   background-size: cover;
@@ -140,7 +129,7 @@ header .container {
   color: var(--primary-color);
 }
 
-/* ABOUT US*/
+/* ABOUT US SECTION */
 .about-section {
   background-color: var(--secondary-color);
   padding: var(--section-padding) 0;
@@ -171,7 +160,7 @@ header .container {
   flex: 1 1 45%;
 }
 
-/* SERVICES */
+/* SERVICES SECTION */
 .services-section {
   background-color: white;
   padding: var(--section-padding) 0;
@@ -239,7 +228,7 @@ header .container {
   background-color: var(--primary-color);
   color: var(--text-color);
 }
-/* VISION */
+/* VISION SECTION */
 .vision-section {
   background-image: url('../images/vision.jpg');
   background-size: cover;
@@ -265,7 +254,7 @@ header .container {
   padding: 15px 25px;
   font-weight: bold;
 }
-/* TEAM */
+/* TEAM SECTION */
 .team-section {
   padding: var(--section-padding) 0;
   background-color: white;
@@ -286,7 +275,6 @@ header .container {
   justify-content: center;
 }
 
-/* IMAGE */
 .team-box.photo img {
   width: 100%;
   height: 100%;
@@ -294,7 +282,6 @@ header .container {
   display: block;
 }
 
-/* WORD */
 .team-box.text {
   background-color: var(--secondary-color);
   padding: 30px;
@@ -320,7 +307,7 @@ header .container {
     grid-template-columns: 1fr;
   }
 }
-/* CONTACT */
+/* CONTACT SECTION */
 .contact-section {
   padding: var(--section-padding) 0;
   background-color: white;
@@ -356,7 +343,6 @@ header .container {
   flex-direction: column;
 }
 
-/* FORM STYLE */
 .contact-form input,
 .contact-form textarea {
   width: 100%;
@@ -376,7 +362,7 @@ header .container {
   width: fit-content;
 }
 
-/* MAP */
+/* MAP SECTION */
 .map {
   width: 100%;
   height: 400px;
@@ -384,7 +370,7 @@ header .container {
   border-radius: 6px;
 }
 
-/* FORM */
+/* FORM SECTION */
 .operation-table {
   width: 100%;
   border-collapse: collapse;
@@ -403,16 +389,8 @@ header .container {
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
-  .contact-list {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "form"
-      "map"
-      "hours";
-  }
-}
-/* FOOTER */
+
+/* FOOTER SECTION */
 footer {
   background-color: var(--text-color);
   color: var(--primary-color);
@@ -426,24 +404,16 @@ footer a {
   text-decoration: underline;
 }
 
-/* MEDIA QUERY */
-@media (max-width: 760px) {
+/* MEDIA QUERY SECTION */
+/* MOBILE RESPONSIVE SECTION */
+@media (max-width: 768px) {
+  /* HEADER MOBILE */
   header .container {
     flex-direction: column;
     align-items: center;
     padding: 20px;
   }
-
-  .logo-container {
-    width: 140px;
-    margin-bottom: 20px;
-  }
-
-  .logo {
-    width: 100%;
-    height: auto;
-  }
-
+  /* NAVIGATION MOBILE */
   .navigation ul {
     flex-direction: column;
     align-items: center;
@@ -455,12 +425,7 @@ footer a {
     font-size: 1.2rem;
     font-weight: bold;
   }
-
-.logo-container {
-  width: 300;
-  margin-bottom: 20px;
-}
-
+  /* SEARCH MOBILE */
   .search-form {
     align-items: center;
     gap: 10px;
@@ -480,19 +445,19 @@ footer a {
     padding: 8px 12px;
     font-size: 1rem;
   }
-
+  /* ABOUT MOBILE */
   .about-section .container {
     flex-direction: column;
   }
-
+  /* SERVICES MOBILE */
   .services-list {
     grid-template-columns: 1fr;
   }
-
+  /* TEAM MOBILE */
   .team-grid-final {
     grid-template-columns: 1fr;
   }
-
+  /* CONTACT MOBILE */
   .contact-list {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -500,7 +465,7 @@ footer a {
       "hours"
       "map";
   }
-
+  /* VISION MOBILE */
   .vision-section .container {
     max-width: 100%;
     padding: 30px 20px;
