@@ -6,13 +6,13 @@
   --reversal-color: white;
   --section-padding: 20px;
 }
-
+/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+/* FONT */
 body {
   font-family: 'Open Sans', sans-serif;
   color: var(--text-color);
@@ -37,62 +37,83 @@ ul {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--section-padding);
+  width:100%;
 }
 
 /* HEADER SECTION */
 header {
-  background-color: var(--text-color);
-  color: var(--reversal-color);
-  padding: 10px 0;
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+/* LOGO */
+.logo-container {
+  background-color: #c78c06;
+  padding: 1.5rem 0;
+  margin-bottom: 0;
+  width: 100%;
 }
 
 .logo {
-  width: 100%;
+  width: 80px;
   height: auto;
+  display: block;
+  margin: 0;
+  padding-left: 20px;
 }
-
+/* NAVIGATION */
 .navigation ul {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+  background-color: #222;
+  margin: 0;
+  padding: 0;
 }
 
-.navigation a {
-  color: var(--primary-color);
-  font-weight: bold;
-  padding: 10px 20px;
+.navigation ul li:not(:first-child) a {
+  background-color: #222;
 }
 
-.navigation a:hover {
-  background-color: var(--primary-color);
-  color: var(--text-color);
+.navigation ul li a {
+  color: #c78c06;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1.1rem;
+  display: block;
+  padding: 0.5rem 0;
 }
 
+.navigation ul li:first-child a {
+  background-color: #c78c06;
+  color: black;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+/* SEARCH STYLE */
 .search-form {
   display: flex;
-  margin-top: 0;
+  justify-content: center;
   align-items: center;
-  gap: 5px;
+  background-color: #222;
+  padding: 1rem 0;
+  width: 100%;
+  max-width: none;
+  margin: 0;
 }
 
-.search-form input {
-  padding: 6px;
+.search-form input[type="text"] {
+  padding: 0.5rem;
+  font-size: 1rem;
   border: none;
+  flex: 1;
 }
 
 .search-form button {
-  padding: 6px 15px;
-  background-color: transparent;
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
+  background-color: #c78c06;
+  border: none;
+  padding: 0.5rem 1rem;
   cursor: pointer;
+  font-size: 1rem;
 }
 
 /* WELCOME SECTION */
@@ -426,15 +447,6 @@ footer a {
     font-weight: bold;
   }
   /* SEARCH MOBILE */
-  .search-form {
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-    max-width: 100%;
-    padding: 0 10%;
-    box-sizing: border-box;
-  }
-
   .search-form input {
     flex: 1;
     padding: 8px;
